@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/调查问卷.css">
+</head>
+
+<body>
+    <div class="contain">
+        <header>
+        <h1 id="title">原神玩家调查表</h1>
+        <p id="description">感谢您抽出宝贵的时间帮我们优化游戏</p>
+        </header><form id="survey-form">
+            <fieldset><label id="name-label">名字 <input id="name" placeholder="请输入你的名字" type="text" required></label></fieldset>
+            <fieldset><label id="email-label">电子邮件 <input id="email" placeholder="请输入你的邮箱" type="email" required></label></fieldset>
+            <fieldset><label id="number-label">年龄 <input min="13" max="120" placeholder="请输入你的年龄" type="number"></label></fieldset>
+            <fieldset>
+                <label>您的职业是
+                    <select id="dropdown">
+                        <option disabled>请选择</option>
+                        <option>学生</option>
+                        <option>全职工作</option>
+                        <option>全日制学习者</option>
+                        <option>保密</option>
+                        <option>其他</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <p>你会向朋友推荐原神吗？</p>
+                <label><input name="recommend" type="radio" class="inline"> 会</label>
+                <label><input name="recommend" type="radio" class="inline"> 可能会</label>
+                <label><input name="recommend" type="radio" class="inline"> 不会</label>
+            </fieldset>
+            <fieldset><label>你最喜欢提瓦特哪个国家?
+                    <select>
+                        <option disabled>请选择</option>
+                        <option>蒙德</option>
+                        <option>璃月</option>
+                        <option>稻妻</option>
+                        <option>须弥</option>
+                    </select>
+                </label></fieldset>
+
+            <fieldset>
+                <p>选择你喜欢的角色</p>
+                <label><input type="checkbox" class="inline"> 可莉</label>
+                <label><input type="checkbox" class="inline"> 七七</label>
+                <label><input type="checkbox" class="inline"> 早柚</label>
+                <label><input type="checkbox" class="inline"> 迪奥娜</label>
+                <label><input type="checkbox" class="inline"> 小吉祥草王</label>
+            </fieldset>
+            <fieldset>
+                <label>你有什么意见或建议吗?
+                    <textarea rows="5" cols="40" placeholder="请在此输入你的意见或建议"></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" value="提交">
+        </form>
+    </div>
+</body>
+
+</html>
