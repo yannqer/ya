@@ -12,49 +12,49 @@
         <h1 id="title">原神玩家调查表</h1>
         <p id="description">感谢您抽出宝贵的时间帮我们优化游戏</p>
         </header><form id="survey-form">
-            <fieldset><label id="name-label">名字 <input id="name" placeholder="请输入你的名字" type="text" required></label></fieldset>
-            <fieldset><label id="email-label">电子邮件 <input id="email" placeholder="请输入你的邮箱" type="email" required></label></fieldset>
-            <fieldset><label id="number-label">年龄 <input id="number" min="13" max="120" placeholder="请输入你的年龄" type="number"></label></fieldset>
+            <fieldset><label for="name-label">名字 <input id="name" name="name" placeholder="请输入你的名字" type="text" required></label></fieldset>
+            <fieldset><label for="email-label">电子邮件 <input id="email" name="email" placeholder="请输入你的邮箱" type="email" required></label></fieldset>
+            <fieldset><label for="number-label">年龄 <input id="number" name="number" min="13" max="120" placeholder="请输入你的年龄" type="number"></label></fieldset>
             <fieldset>
-                <label>您的职业是
+                <label for="dropdown">您的职业是
                     <select id="dropdown">
                         <option value="" disabled>请选择</option>
-                        <option value="1">学生</option>
-                        <option value="2">全职工作</option>
-                        <option value="3">全日制学习者</option>
-                        <option value="4">保密</option>
-                        <option value="5">其他</option>
+                        <option value="xs">学生</option>
+                        <option value="qzgz">全职工作</option>
+                        <option value="qrzxx">全日制学习者</option>
+                        <option value="mi">保密</option>
+                        <option value="qita">其他</option>
                     </select>
                 </label>
             </fieldset>
             <fieldset>
                 <p>你会向朋友推荐原神吗？</p>
-                <label><input value="1" name="recommend" type="radio" class="inline"> 会</label>
-                <label><input value="2" name="recommend" type="radio" class="inline"> 可能会</label>
-                <label><input value="3" name="recommend" type="radio" class="inline"> 不会</label>
+                <label for="hui" ><input id="hui" value="hui" name="recommend" type="radio" class="inline"> 会</label>
+                <label for="keneng"><input id="keneng" value="keneng" name="recommend" type="radio" class="inline"> 可能会</label>
+                <label for="bnhui"><input id="buhui" value="buhui" name="recommend" type="radio" class="inline"> 不会</label>
             </fieldset>
             <fieldset>
-                <label>你最喜欢提瓦特哪个国家?
-                    <select>
+                <label for="like-nation">你最喜欢提瓦特哪个国家?
+                    <select id="like-nation">
                         <option value="" disabled>请选择</option>
-                        <option value="1">蒙德</option>
-                        <option value="2">璃月</option>
-                        <option value="3">稻妻</option>
-                        <option value="4">须弥</option>
+                        <option value="mengde">蒙德</option>
+                        <option value="liyue">璃月</option>
+                        <option value="daoqi">稻妻</option>
+                        <option value="xumi">须弥</option>
                     </select>
                 </label></fieldset>
 
             <fieldset>
                 <p>选择你喜欢的角色</p>
-                <label><input value="keli" type="checkbox" class="inline"> 可莉</label>
-                <label><input value="qiqi" type="checkbox" class="inline"> 七七</label>
-                <label><input value="zaoyou" type="checkbox" class="inline"> 早柚</label>
-                <label><input value="diona" type="checkbox" class="inline"> 迪奥娜</label>
-                <label><input value="jixiang" type="checkbox" class="inline"> 小吉祥草王</label>
+                <label for="keli"><input id="keli" value="keli" type="checkbox" class="inline"> 可莉</label>
+                <label for="qiqi"><input id="qiqi" value="qiqi" type="checkbox" class="inline"> 七七</label>
+                <label for="zaoyou"><input id="zaoyou" value="zaoyou" type="checkbox" class="inline"> 早柚</label>
+                <label for="diona"><input id="diona" value="diona" type="checkbox" class="inline"> 迪奥娜</label>
+                <label for="jixiang"><input id="jixiang" value="jixiang" type="checkbox" class="inline"> 小吉祥草王</label>
             </fieldset>
             <fieldset>
-                <label>你有什么意见或建议吗?
-                    <textarea rows="5" cols="40" placeholder="请在此输入你的意见或建议"></textarea>
+                <label for="suggestion">你有什么意见或建议吗?
+                    <textarea id="suggestion" rows="5" cols="40" placeholder="请在此输入你的意见或建议"></textarea>
                 </label>
             </fieldset>
             <input id="submit" type="submit" value="提交">
