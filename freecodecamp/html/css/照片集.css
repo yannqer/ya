@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f5f6f7;
+    font-family: sans-serif;
+}
+header{
+    text-align: center;
+    /*文本大写*/
+    text-transform: uppercase;
+    padding: 32px;
+    background-color: #0a0a23;
+    color: #fff;
+    border-bottom:4px solid #fdb347;
+}
+
+.gallery{
+    /*Flexbox 是一种一维 CSS 布局方法，侧重于内容的流动。 它提供了控制容器在容器中的间隔和对齐方式的能力。*/
+    display:flex;
+    /*Flexbox 可以被认为有两个轴，主轴和交叉轴。 主轴由 flex-direction 属性决定，有四个可选值：
+      row（默认值）：主轴为水平方向，起点在左端。
+      row-reverse：主轴为水平方向，起点在右端。
+      column：主轴为垂直方向，起点在上沿。
+      column-reverse：主轴为垂直方向，起点在下沿。 
+      注意：轴和方向将因文字方向而异。 上面的值是左至右的文本方向。*/
+    flex-direction: row;
+    /*flex-wrap 属性确定当 flex 容器太小时项目的排列方式。 将此属性设置为 wrap 将允许项目换行到下一行/列（取决于主轴）。 nowrap（默认值）将阻止项目换行，此时项目可能会收缩以自适应或溢出。*/
+    flex-wrap: wrap;
+    /*flex 容器中的项目如何沿主轴对齐，从而影响它们的位置和周围的空间*/
+    justify-content: center;
+    /*沿交叉轴放置弹性内容*/
+    align-items: center;
+    /*是设置间隙的 CSS 简写形式（也叫作 gutters），是行和列之间的空白*/
+    gap: 16px;
+    max-width: 1400px;
+    margin:0 auto ;
+    padding: 20px 10px; 
+}
+
+.gallery img{
+    max-width: 350px;
+    width: 100%;
+    height: 300px;
+    /*将告诉图像填充 img 容器，同时保持横纵比，以便裁剪到适合*/
+    object-fit: cover;
+    border-radius: 10px;
+}
