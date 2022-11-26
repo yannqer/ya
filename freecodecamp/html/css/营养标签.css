@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.label {
+  border: 2px solid black;
+  width: 270px;
+  margin: 20px auto;
+  padding: 0 7px;
+}
+
+header h1 {
+  text-align: center;
+  margin: -4px 0;
+  letter-spacing: 0.15px
+}
+
+p {
+  margin: 0;
+}
+
+.divider {
+  border-bottom: 1px solid #888989;
+  margin: 2px 0;
+  clear: right;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.right {
+  float: right;
+}
+
+.lg {
+  height: 10px;
+}
+
+.lg,
+.md {
+  background-color: black;
+  border: 0;
+}
+
+.md {
+  height: 5px;
+}
+
+.sm-text {
+  font-size: 0.85rem;
+}
+
+.calories-info h1 {
+  margin: -5px -2px;
+  overflow: hidden;
+}
+
+.calories-info span {
+  font-size: 1.2em;
+  margin-top: -7px;
+}
+
+.indent {
+  margin-left: 1em;
+}
+
+.dbl-indent {
+  margin-left: 2em;
+}
+
+.daily-value p:not(.no-divider) {
+  border-bottom: 1px solid #888989;
+}
+
+.note {
+  font-size: 0.6rem;
+  margin: 5px 0;
+}
+
+/*排版
+  1.同样重要的元素之间的水平间距可增加文本可读性。
+
+*/
+
+
+/*
+1.letter-spacing：
+  调整元素中文本之间每个字符的间距。
+2.font-weight：
+  调整文本的粗细
+3.float：
+  用于将元素放在容器左右，环绕它。
+4.clear：
+  清除float属性
+5.div:not(#example){}
+  选择所有没有#example的id
+6.text-indent:
+  规定文本块中首行文本的缩进。
+
+  #1.
+    rem单位代表 root em,与html元素的字体大小有关。
+*/
